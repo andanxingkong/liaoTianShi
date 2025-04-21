@@ -35,8 +35,8 @@ export default function VideoConnectionDialog() {
             }}
           >
             <AlertTitle>Warning</AlertTitle>
-            No webcam connected
-            <br /> <strong>connect one for full experience!</strong>
+            没有连接摄像头
+            <br /> <strong>请连接一个以获得完整体验！</strong>
           </Alert>
         )}
         <Button
@@ -47,7 +47,7 @@ export default function VideoConnectionDialog() {
             game.network.webRTC?.getUserMedia()
           }}
         >
-          Connect Webcam
+          连接摄像头
         </Button>
       </Wrapper>
     </Backdrop>

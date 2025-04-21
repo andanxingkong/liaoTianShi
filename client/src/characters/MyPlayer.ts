@@ -71,7 +71,7 @@ export default class MyPlayer extends Player {
           break
         case ItemType.VENDINGMACHINE:
           // hacky and hard-coded, but leaving it as is for now
-          const url = 'https://www.buymeacoffee.com/skyoffice'
+          const url = 'https://blog.csdn.net/KKKD711?spm=1000.2115.3001.5343'
           openURL(url)
           break
       }
@@ -120,7 +120,7 @@ export default class MyPlayer extends Player {
           })
           // set up new dialog as player sits down
           chairItem.clearDialogBox()
-          chairItem.setDialogBox('Press E to leave')
+          chairItem.setDialogBox('按 E 离开')
           this.chairOnSit = chairItem
           this.playerBehavior = PlayerBehavior.SITTING
           return

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../images/logo.png'
+import logo from '../images/jr.png'
 import styled from 'styled-components'
 import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
@@ -146,7 +146,7 @@ export default function RoomSelectionDialog() {
                 <IconButton className="back-button" onClick={() => setShowCreateRoomForm(false)}>
                   <ArrowBackIcon />
                 </IconButton>
-                <Title>Create Custom Room</Title>
+                <Title>创建自定义房间</Title>
               </TitleWrapper>
               <CreateRoomForm />
             </CustomRoomWrapper>
@@ -179,18 +179,18 @@ export default function RoomSelectionDialog() {
             </CustomRoomWrapper>
           ) : (
             <>
-              <Title>Welcome to SkyOffice</Title>
+              <Title>Welcome to 江软聊天室</Title>
               <Content>
                 <img src={logo} alt="logo" />
                 <Button variant="contained" color="secondary" onClick={handleConnect}>
-                  Connect to public lobby
+                连接到公共大厅
                 </Button>
                 <Button
                   variant="outlined"
                   color="secondary"
                   onClick={() => (lobbyJoined ? setShowCustomRoom(true) : setShowSnackbar(true))}
                 >
-                  Create/find custom rooms
+                 创建/寻找自定义房间
                 </Button>
               </Content>
             </>

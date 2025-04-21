@@ -122,7 +122,7 @@ export const CustomRoomTable = () => {
   }
 
   return availableRooms.length === 0 ? (
-    <MessageText>There are no custom rooms now, create one or join the public lobby.</MessageText>
+    <MessageText>现在没有自定义房间，请创建一个或加入公共大厅。</MessageText>
   ) : (
     <>
       <CustomRoomTableContainer component={Paper}>
